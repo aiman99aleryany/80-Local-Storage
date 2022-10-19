@@ -9,6 +9,7 @@ const user = {
 const saveLocaly = (userData, key) =>
   localStorage.setItem(key, JSON.stringify(userData));
 
+// the exercise says to write a "method" but they mean a function, right? 
 const getLocalInfo = (key) => JSON.parse(localStorage.getItem(key));
 
 saveLocaly(user, "user");
